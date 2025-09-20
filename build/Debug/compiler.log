@@ -1,0 +1,32 @@
+>>> cc
+
+./modules/encoder/encoder.c: In function 'DecodeEncoder':
+./modules/encoder/encoder.c:50:70: warning: 'ECD_TO_DEG' may be used uninitialized [-Wmaybe-uninitialized]
+   50 |     measure->speed_aps = (int32_t)(measure->ecd - measure->last_ecd) * ECD_TO_DEG / encoder->dt;
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+./modules/encoder/encoder.c:25:11: note: 'ECD_TO_DEG' was declared here
+   25 |     float ECD_TO_DEG;
+      |           ^~~~~~~~~~
+./modules/encoder/encoder.c:45:60: warning: 'ECD_HALF_VAL' may be used uninitialized [-Wmaybe-uninitialized]
+   45 |     else if ((int32_t)(measure->ecd - measure->last_ecd) < -ECD_HALF_VAL)
+      |                                                            ^~~~~~~~~~~~~
+./modules/encoder/encoder.c:24:26: note: 'ECD_HALF_VAL' was declared here
+   24 |     int32_t ECD_MAX_VAL, ECD_HALF_VAL;
+      |                          ^~~~~~~~~~~~
+./modules/encoder/encoder.c:41:85: warning: 'ECD_MAX_VAL' may be used uninitialized [-Wmaybe-uninitialized]
+   41 |     measure->ecd = measure->ecd >= offset ? (measure->ecd - offset) : (measure->ecd + ECD_MAX_VAL - offset);
+      |                                                                        ~~~~~~~~~~~~~^~~~~~~~~~~~~
+./modules/encoder/encoder.c:24:13: note: 'ECD_MAX_VAL' was declared here
+   24 |     int32_t ECD_MAX_VAL, ECD_HALF_VAL;
+      |             ^~~~~~~~~~~
+./modules/BMI088/bmi088.c:412:9: note: '#pragma message: REMEMBER TO CHANGE CALI PARAMETERS IF YOU CHOOSE NOT TO CALIBRATE ONLINE(parameters in robot_def.h)'
+  412 | #pragma message ("REMEMBER TO CHANGE CALI PARAMETERS IF YOU CHOOSE NOT TO CALIBRATE ONLINE(parameters in robot_def.h)")
+      |         ^~~~~~~
+
+>>> ld
+
+d:/program files/arm/arm-gnu-toolchain-12.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: ./build/Debug/basic_framework.elf has a LOAD segment with RWX permissions
+Memory region         Used Size  Region Size  %age Used
+          CCMRAM:          0 GB        64 KB      0.00%
+             RAM:       80264 B       128 KB     61.24%
+           FLASH:       82100 B         1 MB      7.83%

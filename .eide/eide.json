@@ -1,0 +1,253 @@
+{
+  "name": "basic_framework",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    "Startup",
+    "Src",
+    "Middlewares",
+    "Drivers",
+    "application",
+    "bsp",
+    "Inc",
+    "modules"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "f57851e3bfe199850bc4c4ca027842fb"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "archExtensions": "",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "STM32F407IGHX_FLASH.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Inc",
+          "Drivers/STM32F4xx_HAL_Driver/Inc",
+          "Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+          "Middlewares/Third_Party/FreeRTOS/Source/include",
+          "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+          "Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+          "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+          "Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Middlewares/ST/ARM/DSP/Inc",
+          "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+          "application",
+          "application/test",
+          "application/test/decode",
+          "application/test/decode/Inc",
+          "application/test/decode/Src",
+          "bsp/adc",
+          "bsp",
+          "bsp/can",
+          "bsp/dwt",
+          "bsp/flash",
+          "bsp/gpio",
+          "bsp/iic",
+          "bsp/log",
+          "bsp/pwm",
+          "bsp/spi",
+          "bsp/usart",
+          "bsp/usb",
+          "modules/algorithm",
+          "modules",
+          "modules/BMI088",
+          "modules/buzzer",
+          "modules/can_comm",
+          "modules/daemon",
+          "modules/encoder",
+          "modules/externcmd",
+          "modules/imu",
+          "modules/ist8310",
+          "modules/led",
+          "modules/master_machine",
+          "modules/message_center",
+          "modules/motor",
+          "modules/power_control",
+          "modules/referee",
+          "modules/remote",
+          "modules/standard_cmd",
+          "modules/super_cap",
+          "modules/TFminiPlus",
+          "modules/tool",
+          "modules/unicomm",
+          "modules/vofa",
+          "Middlewares/Third_Party/SEGGER/RTT",
+          "Middlewares/Third_Party/SEGGER/Config",
+          "modules/motor/DJImotor",
+          "modules/motor/servo_motor",
+          "modules/motor/DRmotor",
+          "modules/motor/LKmotor",
+          "modules/motor/HTmotor",
+          "modules/motor/step_motor"
+        ],
+        "libList": [
+          "Middlewares/ST/ARM/DSP/Lib",
+          "modules/algorithm"
+        ],
+        "defineList": [
+          "DEBUG",
+          "USE_HAL_DRIVER",
+          "STM32F407xx",
+          "ARM_MATH_CM4"
+        ]
+      },
+      "builderOptions": {
+        "GCC": {
+          "version": 5,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "$float-abi-type": "hard",
+            "output-debug-info": "enable",
+            "use-newlib-nano": true,
+            "not-use-syscalls": true
+          },
+          "c/cpp-compiler": {
+            "language-c": "gnu11",
+            "language-cpp": "c++11",
+            "optimization": "level-2",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true
+          },
+          "asm-compiler": {
+            "ASM_FLAGS": "-DDEBUG"
+          },
+          "linker": {
+            "$outputTaskExcludes": [
+              ".bin"
+            ],
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LIB_FLAGS": "-l:libarm_cortexM4lf_math.a",
+            "$toolName": "auto"
+          }
+        }
+      }
+    },
+    "Release": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "archExtensions": "",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "STM32F407IGHX_FLASH.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "builderOptions": {
+        "GCC": {
+          "version": 5,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "$float-abi-type": "hard",
+            "output-debug-info": "enable",
+            "use-newlib-nano": true,
+            "not-use-syscalls": true,
+            "misc-control": []
+          },
+          "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true,
+            "C_FLAGS": "",
+            "CXX_FLAGS": ""
+          },
+          "asm-compiler": {
+            "ASM_FLAGS": ""
+          },
+          "linker": {
+            "$outputTaskExcludes": [
+              ".bin"
+            ],
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LD_FLAGS": "",
+            "LIB_FLAGS": "-l:libarm_cortexM4lf_math.a"
+          }
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Inc",
+          "Drivers/STM32F4xx_HAL_Driver/Inc",
+          "Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+          "Middlewares/Third_Party/FreeRTOS/Source/include",
+          "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+          "Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+          "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+          "Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Middlewares/ST/ARM/DSP/Inc",
+          "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+        ],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32F407xx"
+        ],
+        "libList": [
+          "Middlewares/ST/ARM/DSP/Lib"
+        ]
+      }
+    }
+  },
+  "version": "3.6"
+}

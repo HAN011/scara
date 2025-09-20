@@ -1,0 +1,30 @@
+
+
+OpenDocument="_default_types.h", FilePath="d:/program files/arm-gnu-toolchain-12.3.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h", Line=0
+OpenDocument="main.c", FilePath="d:/Documents/github/2024_CBoard_Test/Src/main.c", Line=71
+OpenDocument="test.c", FilePath="d:/Documents/github/2024_CBoard_Test/application/test/test.c", Line=142
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=0, w=462, h=376, TabPos=3, TopOfStack=0, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Source Files", DockArea=LEFT, x=0, y=0, w=488, h=529, TabPos=0, TopOfStack=1, FilterBarShown=1, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Memory 1", DockArea=RIGHT, x=0, y=0, w=462, h=376, TabPos=2, TopOfStack=0, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x17A0
+OpenWindow="Watched Data 1", DockArea=RIGHT, x=0, y=0, w=462, h=376, TabPos=0, TopOfStack=1, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Terminal", DockArea=RIGHT, x=0, y=1, w=462, h=120, TabPos=1, TopOfStack=1, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=RIGHT, x=0, y=0, w=462, h=376, TabPos=1, TopOfStack=0, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=BOTTOM, x=0, y=0, w=1920, h=417, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="200 ms", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="0;0", DataGraphShowNamesAtCursor=0, PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="320;-1", CodeGraphLegendShown=0, CodeGraphLegendPosition="334;0"
+OpenWindow="Console", DockArea=RIGHT, x=0, y=1, w=462, h=120, TabPos=0, TopOfStack=0, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[142;118;259]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time"], ColWidths=[100;100]
+TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[100;100;100;100;100;100;100;107;107]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Refresh";"Access"], ColWidths=[206;176;100;100]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;351]
+TableHeader="Source Files", SortCol="File", SortOrder="ASCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[239;100;100;100;1113]
+WatchedExpression="target_coord", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="watch_data", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="joint", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="stop_flag", Window=Watched Data 1
+WatchedExpression="jaw", Window=Watched Data 1
+WatchedExpression="jaw_loosen_angle", Window=Watched Data 1
+WatchedExpression="jaw_clamp_angle", Window=Watched Data 1

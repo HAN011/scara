@@ -1,0 +1,6 @@
+tool: GCC
+fileName: 'basic_framework.map'
+elfName: 'basic_framework.elf'
+compilerName: 'Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)'
+compilerFullName: 'arm-none-eabi-gcc.exe (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) 12.3.1 20230626'
+compilerPath: 'D:\Program Files\arm\arm-gnu-toolchain-12.3.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe'
