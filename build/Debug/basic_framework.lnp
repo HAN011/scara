@@ -1,4 +1,4 @@
--mthumb -LMiddlewares/ST/ARM/DSP/Lib -Lmodules/algorithm -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -T c:/Users/HAN/Desktop/RS/arm_1/arm_1/STM32F407IGHX_FLASH.ld -Wl,--gc-sections -Wl,--print-memory-usage --specs=nano.specs --specs=nosys.specs
+-LMiddlewares/ST/ARM/DSP/Lib -Lmodules/algorithm -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T d:/RS/code/arm_1/arm_1/STM32F407IGHX_FLASH.ld -Wl,--gc-sections -Wl,--print-memory-usage --specs=nano.specs --specs=nosys.specs
 -Wl,-Map=./build/Debug/basic_framework.map
 -o ./build/Debug/basic_framework.elf ./build/Debug/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
 ./build/Debug/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o

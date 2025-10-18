@@ -3,11 +3,11 @@
     "target": "Debug",
     "toolchain": "GCC",
     "toolchainLocation": "D:\\Program Files\\arm\\arm-gnu-toolchain-12.3.rel1-mingw-w64-i686-arm-none-eabi",
-    "toolchainCfgFile": "c:\\Users\\HAN\\.vscode\\extensions\\cl.eide-3.25.6\\res\\data\\models/arm.gcc.model.json",
+    "toolchainCfgFile": "c:\\Users\\HAN\\.vscode\\extensions\\cl.eide-3.26.1\\res\\data\\models/arm.gcc.model.json",
     "buildMode": "fast|multhread",
     "showRepathOnLog": true,
     "threadNum": 32,
-    "rootDir": "c:\\Users\\HAN\\Desktop\\RS\\arm_1\\arm_1",
+    "rootDir": "d:\\RS\\code\\arm_1\\arm_1",
     "dumpPath": "build\\Debug",
     "outDir": "build\\Debug",
     "incDirs": [
@@ -219,14 +219,26 @@
     "sourceParams": {},
     "options": {
         "version": 5,
-        "beforeBuildTasks": [],
         "afterBuildTasks": [],
+        "asm-compiler": {
+            "ASM_FLAGS": "-DDEBUG"
+        },
+        "beforeBuildTasks": [],
+        "c/cpp-compiler": {
+            "language-c": "gnu11",
+            "language-cpp": "c++11",
+            "one-elf-section-per-data": true,
+            "one-elf-section-per-function": true,
+            "optimization": "level-2",
+            "warnings": "all-warnings"
+        },
         "global": {
             "$float-abi-type": "hard",
+            "not-use-syscalls": true,
             "output-debug-info": "enable",
             "use-newlib-nano": true,
-            "not-use-syscalls": true,
             "toolPrefix": "arm-none-eabi-",
+            "arm-thumb-mode": "thumb",
             "microcontroller-cpu": "cortex-m4-sp",
             "microcontroller-fpu": "cortex-m4-sp",
             "microcontroller-float": "cortex-m4-sp",
@@ -234,40 +246,29 @@
             "$clang-arch-extensions": "",
             "$armlink-arch-extensions": ""
         },
-        "c/cpp-compiler": {
-            "language-c": "gnu11",
-            "language-cpp": "c++11",
-            "optimization": "level-2",
-            "warnings": "all-warnings",
-            "one-elf-section-per-function": true,
-            "one-elf-section-per-data": true
-        },
-        "asm-compiler": {
-            "ASM_FLAGS": "-DDEBUG"
-        },
         "linker": {
             "$outputTaskExcludes": [
                 ".bin"
             ],
+            "$toolName": "g++",
+            "LIB_FLAGS": "-l:libarm_cortexM4lf_math.a",
             "output-format": "elf",
             "remove-unused-input-sections": true,
-            "LIB_FLAGS": "-l:libarm_cortexM4lf_math.a",
-            "$toolName": "g++",
             "link-scatter": [
-                "c:/Users/HAN/Desktop/RS/arm_1/arm_1/STM32F407IGHX_FLASH.ld"
+                "d:/RS/code/arm_1/arm_1/STM32F407IGHX_FLASH.ld"
             ]
         }
     },
     "env": {
-        "workspaceFolder": "c:\\Users\\HAN\\Desktop\\RS\\arm_1\\arm_1",
+        "workspaceFolder": "d:\\RS\\code\\arm_1\\arm_1",
         "workspaceFolderBasename": "arm_1",
-        "OutDir": "c:\\Users\\HAN\\Desktop\\RS\\arm_1\\arm_1\\build\\Debug",
+        "OutDir": "d:\\RS\\code\\arm_1\\arm_1\\build\\Debug",
         "OutDirRoot": "build",
         "OutDirBase": "build\\Debug",
         "ProjectName": "basic_framework",
         "ConfigName": "Debug",
-        "ProjectRoot": "c:\\Users\\HAN\\Desktop\\RS\\arm_1\\arm_1",
-        "ExecutableName": "c:\\Users\\HAN\\Desktop\\RS\\arm_1\\arm_1\\build\\Debug\\basic_framework",
+        "ProjectRoot": "d:\\RS\\code\\arm_1\\arm_1",
+        "ExecutableName": "d:\\RS\\code\\arm_1\\arm_1\\build\\Debug\\basic_framework",
         "ChipPackDir": "",
         "ChipName": "",
         "SYS_Platform": "win32",
@@ -276,7 +277,7 @@
         "SYS_PathSep": ";",
         "SYS_PathSeparator": ";",
         "SYS_EOL": "\r\n",
-        "EIDE_BUILDER_DIR": "c:\\Users\\HAN\\.vscode\\extensions\\cl.eide-3.25.6\\res\\tools\\win32\\unify_builder",
+        "EIDE_BUILDER_DIR": "c:\\Users\\HAN\\.vscode\\extensions\\cl.eide-3.26.1\\res\\tools\\win32\\unify_builder",
         "EIDE_BINARIES_VER": "12.1.1",
         "EIDE_MSYS": "C:\\Users\\HAN\\.eide\\bin\\builder\\msys\\bin",
         "EIDE_PY3_CMD": "C:\\Users\\HAN\\.eide\\bin\\python36\\python3.exe",
